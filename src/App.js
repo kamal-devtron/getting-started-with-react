@@ -4,7 +4,7 @@ import Data from './Data';
 function App() {
   return (
     <div className="App">
-     <h1>Kamal Acharya</h1>
+     <h1>Welcome Devtron Labs</h1>
      <Data/>
     </div>
   );
