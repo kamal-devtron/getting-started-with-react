@@ -18,7 +18,7 @@ function Data() {
 
   return (
     <div className="Data">
-      <h1>React and Node.js Integration </h1>
+      <h1>React and Node.js Integration {window._env_.REACT_APP_API} </h1>
       <p>Message from the server: {data}</p>
     </div>
   );
