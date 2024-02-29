@@ -5,11 +5,17 @@ import axios from 'axios';
 function Data() {
   const [data, setData] = useState('');
   useEffect(() => {
-    axios.get(process.env.REACT_APP_API?? window._env_.REACT_APP_API)
+
+    const URL = process.env.REACT_APP_API ? process.env.REACT_APP_API : window._env_.REACT_APP_API
+    axios.get(URL)
       .then(response => {
 
         console.log(response.data)
-        setData(response.data.cities[0]);
+        let city = ""
+        if (response.data?.cities.length > 0) {
+          city = response.data.cities[0]
+        }
+        setData(city);
       })
       .catch(error => {
         console.error(error);
