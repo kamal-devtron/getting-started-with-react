@@ -1,3 +1,3 @@
 window._env_ = {
-  REACT_APP_API: "http://localhost:8080",
+  REACT_APP_API: "http://backend.devtron.info",
 }
